@@ -38,7 +38,7 @@
 }
 
 /* ══════════════════════════════════════
-   CSS-переменные: МОЛОЧНАЯ / СВЕТЛАЯ тема
+   CSS-переменные: СВЕТЛАЯ тема
 ══════════════════════════════════════ */
 body.light {
   --bg:          #F7FAFC;
@@ -470,11 +470,11 @@ footer a { color: var(--footer-link); text-decoration: none; }
     });
   });
 
-  // ── Переключатель тёмная / молочная ──
+  // ── Переключатель тёмная / СВЕТЛАЯ──
   const btn = document.getElementById('themeBtn');
   function applyTheme(t) {
     document.body.classList.toggle('light', t === 'light');
-    btn.textContent = t === 'light' ? '🌙 Тёмная' : '☀️ Молочная';
+    btn.textContent = t === 'light' ? '🌙 Тёмная' : '☀️ СВЕТЛАЯ';
     localStorage.setItem('theme0', t);
   }
   function toggleTheme() {
